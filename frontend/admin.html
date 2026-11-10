@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administrator Dashboard · AttendEase</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body><div id="shell"></div>
+<div id="page" hidden>
+<h1 class="page-title">Administrator Dashboard</h1>
+<p class="text-muted">Institution-wide overview</p>
+<div class="row g-3 mb-4"><div class="col-6 col-xl-3"><div class="card stat-card p-3"><div class="d-flex align-items-center gap-3"><div class="icon"><i class="bi bi-mortarboard"></i></div><div><div class="text-muted small">Students</div><div class="value" id="st-students">–</div></div></div></div></div><div class="col-6 col-xl-3"><div class="card stat-card p-3"><div class="d-flex align-items-center gap-3"><div class="icon"><i class="bi bi-person-workspace"></i></div><div><div class="text-muted small">Teachers</div><div class="value" id="st-teachers">–</div></div></div></div></div><div class="col-6 col-xl-3"><div class="card stat-card p-3"><div class="d-flex align-items-center gap-3"><div class="icon"><i class="bi bi-journal-bookmark"></i></div><div><div class="text-muted small">Classes</div><div class="value" id="st-classes">–</div></div></div></div></div><div class="col-6 col-xl-3"><div class="card stat-card p-3"><div class="d-flex align-items-center gap-3"><div class="icon"><i class="bi bi-book"></i></div><div><div class="text-muted small">Subjects</div><div class="value" id="st-subjects">–</div></div></div></div></div></div>
+<div class="row g-3 mb-4"><div class="col-lg-4"><div class="card p-3"><h6>Overall attendance</h6><div class="chart-box"><canvas id="chartOverall"></canvas></div></div></div>
+<div class="col-lg-8"><div class="card p-3"><h6>Attendance % by subject</h6><div class="chart-box"><canvas id="chartSubjects"></canvas></div></div></div></div>
+<div class="card"><div class="table-responsive" id="subj-table"></div></div>
+</div>
+<script type="module" src="js/admin.js"></script>
+</body></html>

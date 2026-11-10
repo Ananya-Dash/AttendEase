@@ -1,0 +1,7 @@
+{
+  "indexes": [
+    { "collectionGroup": "subjects", "queryScope": "COLLECTION",
+      "fields": [ { "fieldPath": "classId", "order": "ASCENDING" }, { "fieldPath": "subjectCode", "order": "ASCENDING" } ] }
+  ],
+  "fieldOverrides": []
+}
