@@ -6,7 +6,18 @@ AttendEase is a cloud-based website for managing student attendance. It provides
 
 **[Open AttendEase](https://attendease-demo-4684e.web.app)**
 
-Accounts are created by the administrator. There is no public sign-up page.
+## Demo sign-in credentials
+
+These credentials are for the project demonstration only. The teacher and student accounts must be created in the deployed Firebase project by the administrator before they can sign in.
+
+| Role | Email | Password |
+| --- | --- | --- |
+| Administrator | `iamadmin@gmail.com` | `iamadmin` |
+| Teacher (sample) | `meera.iyer@example.edu` | `12345678` |
+| Student (sample) | `student01@example.edu` | `12345678` |
+
+The password `12345678` is used for the demo teacher and student accounts. Do not reuse these demo passwords for personal or production accounts. Rotate or remove the demo credentials after the presentation.
+
 
 ## Features
 
